@@ -25,9 +25,7 @@ stdenv.mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/bin
-    cp bin/zcash-cli $out/bin
-    cp bin/zcashd $out/bin
-    cp bin/zecwallet $out/bin
+    cp zecwallet $out/bin
   '';
 
   nativeBuildInputs = [  pkgconfig  ];
